@@ -493,7 +493,7 @@ $ ./python.exe -m timeit -s "from json.encoder import c_encode_basestring; s = '
 $ ./python.exe -m timeit -s "from json.encoder import c_encode_basestring; s = ''.join(map(str, range(100)))" "c_encode_basestring(s)"
 200000 loops, best of 5: 1.54 usec per loop
 ```
-After:
+After: 
 ```bash
 # Without escaping
 $ ./python.exe -m timeit -s "from json.encoder import c_encode_basestring; s = 'some random string'" "c_encode_basestring(s)"
@@ -507,5 +507,5 @@ $ ./python.exe -m timeit -s "from json.encoder import c_encode_basestring; s = '
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTA4NjQ1Nl19
+eyJoaXN0b3J5IjpbLTQwMjU5MDc0MiwtNTgxMDg2NDU2XX0=
 -->
